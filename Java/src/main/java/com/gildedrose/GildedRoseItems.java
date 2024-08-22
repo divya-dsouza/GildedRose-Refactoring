@@ -23,8 +23,8 @@ public enum GildedRoseItems {
     }
 
     public static GildedRoseItems getEnum(String value) {
-        for(GildedRoseItems v : values())
-            if(v.getItem().equalsIgnoreCase(value)) return v;
+        for (GildedRoseItems v : values())
+            if (v.getItem().equalsIgnoreCase(value)) return v;
         return NORMAL;
     }
 }

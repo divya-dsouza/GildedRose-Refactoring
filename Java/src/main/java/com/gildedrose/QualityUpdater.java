@@ -7,6 +7,8 @@ public interface QualityUpdater {
     static void checkQuantityAndDecrease(Item item, int decreaseBy) {
         if (item.quality > 0)
             item.quality = item.quality - decreaseBy;
+        if (item.quality < 0)
+            item.quality = 0;
     }
 
     static void checkQuantityAndIncrease(Item item) {
